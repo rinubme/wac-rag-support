@@ -1,0 +1,44 @@
+body {
+    background: #f8f9fa;
+}
+
+.chat-container {
+    height: 70vh;
+    overflow-y: auto;
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #dee2e6;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    line-height: 1.5;
+}
+
+.user {
+    background: #007bff;
+    color: white;
+    margin-left: 15%;
+}
+
+.bot {
+    background: #e9ecef;
+    margin-right: 15%;
+}
+.thinking {
+    color: #666;
+    font-style: italic;
+}
+
+.dots::after {
+    content: ' .';
+    animation: dots 1.5s steps(4, end) infinite;
+}
+
+@keyframes dots {
+    0% { content: '.'; }
+    33% { content: '..'; }
+    66% { content: '...'; }
+}
